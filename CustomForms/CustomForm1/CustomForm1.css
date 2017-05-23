@@ -13,25 +13,30 @@ padding-bottom:15px;
 font-size:17px
 }*/
 #slickSlider {
-position:absolute;
+position:relative;
 right:0px;
-width:300px;
+/*overflow: hidden;*/
+/*width:300px;*/
 }
-#sidebar, #sidebar1 {
+#slickImage {
 position:absolute;
 box-shadow:0 0 8px gray;
+right:0px;
+cursor: pointer;
 }
-/*#header {
+#slickContactForm {
 width:260px;
-height:350px;
+height:360px;
 position:absolute;
 right:0;
 border:1px solid #d8d8d8;
 margin-left:40px;
 padding:20px 40px;
 border-radius:3px;
-box-shadow:0 0 8px gray
-}*/
+box-shadow:0 0 8px gray;
+visibility: hidden;
+
+}
 
 
 /*h3 {
