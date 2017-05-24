@@ -14,7 +14,7 @@ https://dcrazed.com/free-css3-sign-up-registration-forms/
 }
 
 #slickSlider {
-position: relative;
+position: fixed;
 right: 0px;
 }
 
@@ -28,7 +28,7 @@ cursor: pointer;
 
 #slickContactForm {
 width:260px;
-height:360px;
+height:450px;
 position:absolute;
 right:0;
 border:1px solid #d8d8d8;
@@ -37,11 +37,13 @@ padding:20px 40px;
 border-radius:3px;
 box-shadow:0 0 8px gray;
 visibility: hidden;
+background-color: white;
 }
 
 .slickInputBox input[type="text"] {
   padding: 10px;
   margin-left: -40px;
+  width: 250px;
   border: none;
   border-bottom: solid 2px #c9c9c9;
   transition: border 0.3s;
