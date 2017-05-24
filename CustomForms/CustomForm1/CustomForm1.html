@@ -2,24 +2,29 @@
 
 <link rel="stylesheet" href="CustomForm1.css">
 
-<div id="slickSlider">
-    <div id="slickImage" onclick="openSlick()"><img src="ContactMe.png"></div>
-        <div id="slickContactForm" >
-            <h2>Contact Form</h2>
-            <p>This is my form.Please fill it out.It's awesome!</p>
-            <input name="dname" type="text" value="Your Name">
-            <input name="demail" type="text" value="Your Email">
-            <h4>Query type</h4>
-            <select>
+<div id="slickSlider" class="slickFont">
+    <div id="slickImage" onclick="slickSliderClicked()"><img src="ContactMe.png"></div>
+    <div id="slickContactForm">
+        <h1>Contact Form</h1>
+        <p>This is my form.Please fill it out.It's awesome!</p>
+        <ul class="slickInputBox">
+            <input type="text" placeholder="Your Name">
+        </ul>
+        <ul class="slickInputBox">
+            <input type="text" placeholder="Your Email">
+        </ul>
+
+        <h4>What are you looking for?</h4>
+        <select>
             <option>General Query</option>
             <option>Presales</option>
             <option>Technical</option>
             <option>Others</option>
         </select>
-            <textarea>Message</textarea>
-            <button>Send Message</button>
-        </div>
-    
+        <textarea>Message</textarea>
+        <button>Send Message</button>
+    </div>
+
 </div>
 <!--test-->
 <!-- Sliding div ends here -->

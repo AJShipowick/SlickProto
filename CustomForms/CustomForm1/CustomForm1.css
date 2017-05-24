@@ -1,29 +1,31 @@
 /*Keep div centered in middle of screen:
 http://stackoverflow.com/questions/5012111/how-to-position-a-div-in-the-middle-of-the-screen-when-the-page-is-bigger-than-t
+
+CSS Form Ideas:
+https://www.sanwebe.com/2014/08/css-html-forms-designs
+https://www.freshdesignweb.com/css-registration-form-templates/
+https://dcrazed.com/free-css3-sign-up-registration-forms/
 */
 
-/*body {
-overflow:hidden;
-width:960px;
-margin:10px auto
+
+
+.slickFont {
+    font-family: Helvetica;
 }
-p {
-border-bottom:1px dotted #d8d8d8;
-padding-bottom:15px;
-font-size:17px
-}*/
+
 #slickSlider {
-position:relative;
-right:0px;
-/*overflow: hidden;*/
-/*width:300px;*/
+position: relative;
+right: 0px;
 }
+
 #slickImage {
-position:absolute;
-box-shadow:0 0 8px gray;
-right:0px;
+position: absolute;
+box-shadow: 0 0 8px gray;
+right: 0px;
+top: 100px;
 cursor: pointer;
 }
+
 #slickContactForm {
 width:260px;
 height:360px;
@@ -35,54 +37,16 @@ padding:20px 40px;
 border-radius:3px;
 box-shadow:0 0 8px gray;
 visibility: hidden;
-
 }
 
-
-/*h3 {
-font-family:'Roboto Slab',serif
+.slickInputBox input[type="text"] {
+  padding: 10px;
+  margin-left: -40px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
 }
-input[type=text] {
-margin-top:10px;
-padding:6px;
-width:100%;
-font-size:15px;
-border-radius:2px;
-border:3px solid #98d0f1
+.slickInputBox input[type="text"]:focus,
+.slickInputBox input[type="text"].focus {
+  border-bottom: solid 4px #c9c9c9;
 }
-h4 {
-font-size:15px
-}
-div#title {
-position:absolute;
-top:300px;
-left:650px
-}
-select {
-padding:6px;
-width:100%;
-font-size:15px;
-border-radius:2px;
-border:3px solid #98d0f1
-}
-textarea {
-padding:6px;
-font-size:15px;
-border-radius:2px;
-border:3px solid #98d0f1;
-margin-top:10px;
-height:80px;
-width:100%
-}
-button {
-background:#2bc1f2;
-border:none;
-color:#fff;
-width:100%;
-font-size:22px;
-font-weight:bolder;
-padding:8px 0;
-border-radius:3px;
-cursor:pointer;
-margin-top:25px
-}*/
