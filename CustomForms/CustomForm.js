@@ -22,6 +22,13 @@
     }
 
     function getCustomSliderOptions() {
+
+        //Return HTML from XMLHttpRequest:
+        //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/HTML_in_XMLHttpRequest
+
+        //
+        //
+
         // var xmlhttp;
         // xmlhttp = new XMLHttpRequest();
         // xmlhttp.onreadystatechange = function () {

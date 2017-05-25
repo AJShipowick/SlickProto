@@ -1,20 +1,24 @@
 
+//USE TYPESCRIPT!!
+//https://code.visualstudio.com/docs/languages/typescript
+
 let slickSliderOpen = false;
 
 function slickSliderClicked() {
 
     if (!slickSliderOpen) {
-            document.documentElement.style.overflowX = 'hidden';
+        document.documentElement.style.overflowX = 'hidden';
+
         document.getElementById("slickContactForm").style.visibility = "visible";
         document.getElementById("slickSlider").style.right = "-300px";
         document.getElementById("slickImage").style.right = "340px";
-
         showSlickSlider();
 
+        document.documentElement.style.overflowX = 'inherit';
     } else {
         closeSlickSlider()
-        document.documentElement.style.overflowX = 'inherit';
     }
+
     slickSliderOpen = !slickSliderOpen;
 }
 
