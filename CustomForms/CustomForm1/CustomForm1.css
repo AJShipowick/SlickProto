@@ -14,22 +14,22 @@ https://dcrazed.com/free-css3-sign-up-registration-forms/
 }
 
 #slickSlider {
-position: fixed;
 right: 0px;
+position:fixed;
+top: 50px;
 }
 
 #slickImage {
 position: absolute;
 box-shadow: 0 0 8px gray;
 right: 0px;
-top: 100px;
+top: 150px;
 cursor: pointer;
 }
 
 #slickContactForm {
 width:260px;
 height:450px;
-position:absolute;
 right:0;
 border:1px solid #d8d8d8;
 margin-left:40px;

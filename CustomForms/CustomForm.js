@@ -3,10 +3,13 @@
 // compatible with IE7+, Firefox, Chrome, Opera, Safari
 
 //XMLHttpRequest.DONE == 4
-
 //minify JS: https://jscompress.com/
 
 (function () {
+    //create parent element
+    var sliderDiv = document.createElement("div");
+    sliderDiv.setAttribute("id", "slickSlider");
+    document.body.appendChild(sliderDiv);
 
     loadSlickHTML();
     loadSlickCSS();
@@ -19,7 +22,7 @@
     }
 
     function handleHTMLCallback(data) {
-        //var x = data;
+        document.getElementById('slickSlider').innerHTML = data;
     }
 
     function loadSlickCSS() {
@@ -28,7 +31,10 @@
     }
 
     function handleCSSCallback(data) {
-
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = data;
+        document.getElementsByTagName('head')[0].appendChild(style);
     }
 
     function loadSlickJS() {
@@ -37,7 +43,9 @@
     }
 
     function handleJSCallback(data) {
-
+        var script = document.createElement('script');
+        script.innerHTML = data;
+        document.getElementsByTagName('head')[0].appendChild(script);
     }
 
     //https://stackoverflow.com/questions/35367830/load-an-image-from-a-xhr-request-and-then-pass-it-to-the-server
@@ -56,6 +64,8 @@
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {  //Use 4 && 200 for a server request
                 callback(xhr.response); //Outputs a DOMString by default
+            } else {
+                //todo handle errors
             }
         }
 
@@ -71,7 +81,6 @@
 
         oReq.onload = function (oEvent) {
             callback(oReq.response);
-            // ...
         };
         oReq.send();
     }
@@ -79,7 +88,7 @@
     function showSlickImageOnScreen(blobData) {
         var urlCreator = window.URL || window.webkitURL;
         var imageUrl = urlCreator.createObjectURL(blobData);
-        document.querySelector("#test").src = imageUrl;
+        document.querySelector("#slickImage").src = imageUrl;
     }
 
 })();
