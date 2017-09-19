@@ -14,7 +14,14 @@
     loadSlickHTML();
     loadSlickCSS();
     loadSlickJS();
-    loadSlickImage();
+
+    //todo, this timeout is not the best solution.
+    //But...the image will not assign to the HTML property unless there is a timelapse in this call......sometimes....
+    setTimeout(
+        function () {
+            loadSlickImage();
+        }, 100);
+
 
     function loadSlickHTML() {
         var htmlURL = "CustomForm1/CustomForm1.html";
